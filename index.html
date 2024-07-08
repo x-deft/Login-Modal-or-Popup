@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="openModalBtn">Iniciar Sesión</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Entra en FARFETCH</h2>
+            <form>
+                <div class="input-random">
+                    <label for="email">Dirección de correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-random">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-check">
+                    <input type="checkbox" id="staySignedIn">
+                    <label for="staySignedIn">Mantener la sesión iniciada</label>
+                </div>
+                
+                <div class="button-login">
+                    <button type="submit">Inicia sesión</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
